@@ -930,7 +930,7 @@ footer h1 {
  }
 
  /*Mobile responsive */
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 550px) {
    .card {
     height: 53vh;
 
@@ -985,13 +985,10 @@ footer h1 {
     .skills-box h1 {
         font-size: 20px;
     }
-
-     .designer {
+    .designer {
         top: 20%;
         left: 18%;
     }
-    
-    
     .coder {
         top: 40%;
         left: 18%;
@@ -999,21 +996,17 @@ footer h1 {
     .slider-text {
         top: 70%;
         left: 18%;
-
     }
     .skills-box h1 {
     font-size: 30px;
     display: flex;
     align-items: center;
-}
-.skills-box p {
+    }
+    .skills-box p {
     line-height: 23px;
-}
-
-
+    }
     #skills-section h1 {
         margin-top: 30%;
-
     }
     #contact-section {
         height: auto;
@@ -1032,6 +1025,15 @@ footer h1 {
         height: 60px;
         top: -3%;
         right: -15%;    
+    }
+    .card h1 {
+        bottom: 50%;
+        font-size: 20px;
+        z-index: 1;
+   }
+    .card p { 
+        top: 55%;
+    bottom: 5%;
     }
     .card video {
         width: 100%;
