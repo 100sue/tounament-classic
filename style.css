@@ -549,18 +549,18 @@ header ul li a {
 .social-box a:hover {
     color: #e45806;
 }
-
-.contact-box p {
-    max-width: 400px;
-    margin-top: 20px;
-    margin-bottom: 18px;
-}
 .contact-box {
     flex: 2;
     padding: 3rem;
     display: flex;
     flex-direction: column;
 }
+.contact-box p {
+    max-width: 400px;
+    margin-top: 20px;
+    margin-bottom: 18px;
+}
+
 .contact-box form {
     display: flex;
     flex-direction: column;
@@ -965,6 +965,9 @@ footer h1 {
     #contact-section {
         margin-top: 200px;
     }
+    .section-title {
+        margin-top: -50px;
+    }
  }
 
  /*Mobile responsive */
@@ -983,9 +986,10 @@ footer h1 {
     height: 50%;
     object-fit: cover;
     mix-blend-mode: lighten;
-}
+   }
+   
     
-  }
+}
 
 @media screen and (max-width: 450px){
     .card h1 {
@@ -996,6 +1000,7 @@ footer h1 {
     .card p { 
         top: 65%;
     }
+    
 }
 
   @media screen and (max-width: 380px) {
