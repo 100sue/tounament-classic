@@ -209,24 +209,32 @@
                 </p>
                 <form action="https://api.web3forms.com/submit" method="POST">
                     <input type="hidden" name="access_key" value="8eebc0df-fa72-4529-ab9b-3da918bb297b">
-                <p>Nom</p>
-                <input type="text" name="nom"  placeholder="Votre nom" minlength="4" required>
-
-                <p>Email</p>
-                <input type="email" name="email" placeholder="Votre e-mail" required>
-
-                <p>Chaussure</p>
-                <input type="text" name="pointure" placeholder="Votre pointure " required>
-                
-
-                <p>2vs2</p>
-                <input type="text" name="copequipier" placeholder="Nom coequipier">
-
-                <p>Email</p>
-                <input type="email" name="email2" placeholder="E-mail coequipier">
-
-                <button type="submit" value="submit"><ion-icon name="send"></ion-icon>Envoyer</button>
-
+                <diV class="input-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" name="name-1" id="name" required>
+                        </diV>
+                        <diV class="input-group">
+                            <label for="email">Votre email</label>
+                            <input type="text" name="email-1" id="email" required>
+                        </diV>
+                        <diV class="input-group">
+                            <label for="name">Votre pointure</label>
+                            <input type="text" name="pointure" id="name" required>
+                        </diV>
+                        <diV class="input-group2"> 
+                            <input type="radio" name="choix-1" id="name">1vs1
+                            <input type="radio" name="choix-2" id="name">2vs2
+                            <input type="radio" name="choix-3" id="name">les 2
+                        </diV>
+                        <diV class="input-group">
+                            <label for="name">2vs2 coequipier</label>
+                            <input type="text" name="name-2" id="name">
+                        </diV>
+                        <diV class="input-group">
+                            <label for="email">Email coéquipier</label>
+                            <input type="text" name="email-2" id="email">
+                        </diV>
+                        <button type="submit" class="submit-btn">Envoyer</button>
                 </form>
 
             </div>

@@ -553,27 +553,65 @@ header ul li a {
 .contact-box p {
     max-width: 400px;
     margin-top: 20px;
-    margin-bottom: 5px;
-
+    margin-bottom: 18px;
 }
-.contact-box input {
-    padding: 7.5px 30px;
-    background-color: white;
-    width: 88%;
-    height: 35px;
+.contact-box {
+    flex: 2;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+.contact-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+.input-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+}
+.input-group label {
+    position: absolute;
+    top: -0.70rem;
+    left: 1rem;
+    background-color: #00071B;
+    padding: 0 0.25rem;
+    border-radius: 1.12rem;
+    font-size: 0.875rem;
+    color: #e46d28;
+    gap: 1.2rem;
+    transition: color 0.2s ease;
+}
+.input-group input {
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
     outline: none;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-color: 1px solid white;
 }
-.contact-box input:focus {
-    border-color: #e65908;
+.input-group2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
-.contact-box input:invalid {
+.input-group input:focus {
+    border-color: #f15b03;
+}
+
+.input-group input[type='radio'] {
+    width: auto;
+    color: #6600c5;
+    
+}
+
+.input-group input:invalid {
     border-color: 5px rgb(185, 2, 2);
 }
 
-.contact-box button {
+.submit-btn {
     margin-top: 30px;
     color: white;
     padding: 10px 15px;
@@ -949,6 +987,17 @@ footer h1 {
     
   }
 
+@media screen and (max-width: 450px){
+    .card h1 {
+        top: 55%;
+        font-size: 20px;
+        z-index: 1;
+   }
+    .card p { 
+        top: 65%;
+    }
+}
+
   @media screen and (max-width: 380px) {
     
     .hero-vid-box {
@@ -1012,7 +1061,7 @@ footer h1 {
         height: auto;
     }
     .section-title {
-        margin-top: -10px;
+        margin-top: -50px;
     }
     .contact-box {
         margin-left: 20px;
@@ -1027,13 +1076,12 @@ footer h1 {
         right: -15%;    
     }
     .card h1 {
-        bottom: 50%;
+        top: 55%;
         font-size: 20px;
         z-index: 1;
    }
     .card p { 
-        top: 55%;
-    bottom: 5%;
+        top: 65%;
     }
     .card video {
         width: 100%;
@@ -1048,6 +1096,7 @@ footer h1 {
     }
     .section-title {
         font-size: 23px;
+        margin-top: -50px;
     }
     .contact-box form {
         margin-bottom: 20px;
