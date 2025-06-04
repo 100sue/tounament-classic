@@ -597,14 +597,15 @@ form :where(.input-group2, .inscription) {
     align-items: center;
     gap: 1rem;
 }
+form :where(.inscription input, .inscription label, .inscription3 input) {
+    cursor: pointer;
+}
 .input-group input:focus {
     border-color: #f15b03;
 }
 
 .input-group2 input[type='radio'] {
     width: auto;
-    color: #6600c5;
-    
 }
 
 .input-group input:invalid {
