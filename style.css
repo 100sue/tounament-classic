@@ -384,6 +384,16 @@ header ul li a {
     margin-bottom: 700px;
 }
 
+h2 {
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+h3 {
+    color: #f78f07;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
 .project-card {
     display: flex;
     width: 100%;
